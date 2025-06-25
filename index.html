@@ -5,16 +5,12 @@
     <meta charset="utf-8">
     <title>Nemil Doshi</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon" type="image/png">
-    <!-- <link href="https://icons.iconarchive.com/icons/hydrattz/multipurpose-alphabet/128/Letter-B-lg-icon.png" rel="icon"> -->
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -22,335 +18,241 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .hero {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .hero-image img {
+            width: 100%;
+        }
+
+        .portfolio-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-text {
+            background: #f8f9fa;
+            padding: 10px;
+        }
+
+        .footer {
+            background: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer a {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 20px;
+                white-space: normal;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            .portfolio-wrap {
+                margin-bottom: 20px;
+            }
+
+            .me-text, .me-item {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <img src="img/favicon.png" alt="Image" style="height: 70px;">
-            <a href="index.html" class="navbar-brand" style="font-size: 30px;">WELCOME MY PORTFOLIO</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="img/favicon.png" alt="Logo" style="height: 50px;">
+            <a class="navbar-brand ml-2" href="#home">WELCOME MY PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="#home" class="nav-item nav-link active">Home</a>
-                    <a href="#me" class="nav-item nav-link">About Me</a>
-                    <a href="#me" class="nav-item nav-link">About Skill & Interest</a>
-                    <a href="#portfolio" class="nav-item nav-link">Designs</a>
-                    <a href="#Services" class="nav-item nav-link">My Services</a>
-		    <a href="#Contact" class="nav-item nav-link">Contact</a>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills & Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Designs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!-- Nav Bar End -->
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </nav>
+    <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <div class="hero" id="home">
-        <div class="container-fluid">
+    <section class="hero" id="home">
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                        <div class="hero-text">
- 			    <div class="typed-text">Hello I'm Nemil Doshi</div>
-                            
-                            <h1></h1>
-                            <h2></h2>
-                            <p>Graphic Designer</p>
-			    <p>"Welcome to my creative world! I'm a passionate graphic designer with a talent for turning ideas into stunning visuals."
-                        </div>
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h1>Hello I'm Nemil Doshi</h1>
+                        <p>Graphic Designer</p>
+                        <p>Welcome to my creative world! I'm a passionate graphic designer with a talent for turning ideas into stunning visuals.</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                <div class="col-md-6">
                     <div class="hero-image">
                         <img src="img/hero.png" alt="Hero Image">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Hero End -->
 
-
-    <!-- Me Start -->
-    <div class="me" id="me">
+    <!-- About Me Start -->
+    <section id="about-me" class="py-5">
         <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>ABOUT ME</h2>
+            <div class="text-center mb-4">
+                <h2>About Me</h2>
             </div>
             <div class="row">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        </div>
-                        <div class="me-text">
-                            <p>
-                                I am a graphic designer with one year of experience, dedicated to creating visually compelling designs that resonate with audiences.
-                            </p>
-                            <p>
-                                My expertise lies in tools like Canva, which i use to craft unique and impactful designs. Whether it's branding social media, or any creative project, i'm committed to delivering high-quality results that exceed expecations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-    <!-- Me End -->  
-  
-    <!-- Me Start -->
-    <div class="me" id="me">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>ABOUT SKILL & INTEREST</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="me-item">
-                        <div class="me-icon">
-                            <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="me-text">
-                            <h3>Canva (basic/quick designs)</h3>
-                            <p>
-                                "Quick and clean graphic design using Canva  perfect for social media, flyers, and presentations. Focused on simple, effective visuals delivered fast."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="me-item">
-                        <div class="me-icon">
-                            <i class="fa fa-address-card"></i>
-                        </div>
-                        <div class="me-text">
-                            <h3>Invitation Card</h3>
-                            <p>
-                                I design beautiful and personalized invitation cards using Canva.
-Perfect for business, weddings, baby shower, birthdays, events, and special occasions
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="me-item">
-                        <div class="me-icon">
-                            <i class="fa fa-paint-brush"></i>
-                        </div>
-                        <div class="me-text">
-                            <h3>PhotoShop Skills</h3>
-                            <p>
-                                The art of removing background and beautifying the pictures are the skills of PhotoShop.
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                    <p>I am a graphic designer with one year of experience, dedicated to creating visually compelling designs that resonate with audiences.</p>
+                    <p>My expertise lies in tools like Canva, which I use to craft unique and impactful designs. Whether it's branding, social media, or any creative project, I'm committed to delivering high-quality results that exceed expectations.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Me End -->
+    </section>
+    <!-- About Me End -->
 
+    <!-- Skills Start -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Skills & Interests</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Canva</h4>
+                    <p>Quick and clean graphic design using Canva — perfect for social media, flyers, and presentations.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Invitation Cards</h4>
+                    <p>I design beautiful and personalized invitation cards for all occasions using Canva.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Photoshop</h4>
+                    <p>Skilled in background removal and photo enhancement using Photoshop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills End -->
 
     <!-- Portfolio Start -->
-    <div class="portfolio" id="portfolio">
+    <section id="portfolio" class="py-5">
         <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>MY DESIGNS</h2>
+            <div class="text-center mb-4">
+                <h2>My Designs</h2>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <ul id="portfolio-filter">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-1">Cards</li>
-                        <li data-filter=".filter-2">Thumbnail</li>
-                        <li data-filter=".filter-3">Creative Festival Post</li>
+                <div class="col-md-4">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/Inv1.png" alt="Invitation Card">
+                        </div>
+                        <div class="portfolio-text text-center">
+                            <h5>Invitation Card</h5>
+                            <a class="btn btn-sm btn-primary" href="img/Inv1.png" data-lightbox="portfolio">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- Services Start -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>My Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Wedding Related</h5>
+                    <ul>
+                        <li>Wedding & Engagement Invitations</li>
+                        <li>Reception / Sangeet / Mehndi Invites</li>
+                        <li>Thank You Cards</li>
+                        <li>Digital Invitations (WhatsApp / Instagram)</li>
+                    </ul>
+                    <h5>Baby & Kids</h5>
+                    <ul>
+                        <li>Baby Shower Invitations</li>
+                        <li>Naming Ceremony Cards</li>
+                        <li>First Birthday Invitations</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Business & Corporate</h5>
+                    <ul>
+                        <li>Visiting Cards</li>
+                        <li>Thank You Cards</li>
+                        <li>Appointment / Loyalty Cards</li>
+                    </ul>
+                    <h5>Digital Designs</h5>
+                    <ul>
+                        <li>Social Media Posts</li>
+                        <li>Festival Greetings</li>
+                        <li>Custom Photo Cards</li>
                     </ul>
                 </div>
             </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap small-wrap text-center">
-   			 <div class="portfolio-img">
-        		<img src="img/Inv1.png" alt="Image" class="img-fluid rounded" style="width: 200px; height: auto;">
-   			 </div>
-    			<div class="portfolio-text p-2" style="background-color: #f8f9fa;">
-			<h3 style="margin-bottom: 5px;">Invitation Card</h3>
-       			 <a class="btn btn-sm btn-primary" href="img/Inv1.png" data-lightbox="portfolio">+</a>
-  			  </div>		
-			</div>
-                    </div>
+        </div>
+    </section>
+    <!-- Services End -->
 
-<div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap small-wrap text-center">
-   			 <div class="portfolio-img">
-        		<img src="img/Visiting.png" alt="Image" class="img-fluid rounded" style="width: 200px; height: auto;">
-   			 </div>
-    			<div class="portfolio-text p-2" style="background-color: #f8f9fa;">
-			<h3 style="margin-bottom: 5px;">Visiting Card</h3>
-       			 <a class="btn btn-sm btn-primary" href="img/Visiting.png" data-lightbox="portfolio">+</a>
-  			  </div>		
-			</div>
-                    </div>
-<div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap small-wrap text-center">
-   			 <div class="portfolio-img">
-        		<img src="img/Poster1.jpg" alt="Image" class="img-fluid rounded" style="width: 200px; height: auto;">
-   			 </div>
-    			<div class="portfolio-text p-2" style="background-color: #f8f9fa;">
-			<h3 style="margin-bottom: 5px;">Festival Poster</h3>
-       			 <a class="btn btn-sm btn-primary" href="img/Poster1.jpg" data-lightbox="portfolio">+</a>
-  			  </div>		
-			</div>
-                    </div>
-<div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap small-wrap text-center">
-   			 <div class="portfolio-img">
-        		<img src="img/Poster2.jpg" alt="Image" class="img-fluid rounded" style="width: 200px; height: auto;">
-   			 </div>
-    			<div class="portfolio-text p-2" style="background-color: #f8f9fa;">
-			<h3 style="margin-bottom: 5px;">Festival Poster</h3>
-       			 <a class="btn btn-sm btn-primary" href="img/Poster2.jpg" data-lightbox="portfolio">+</a>
-  			  </div>		
-			</div>
-                    </div>
-<div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap small-wrap text-center">
-   			 <div class="portfolio-img">
-        		<img src="img/Poster3.jpg" alt="Image" class="img-fluid rounded" style="width: 200px; height: auto;">
-   			 </div>
-    			<div class="portfolio-text p-2" style="background-color: #f8f9fa;">
-			<h3 style="margin-bottom: 5px;">Festival Poster</h3>
-       			 <a class="btn btn-sm btn-primary" href="img/Poster3.jpg" data-lightbox="portfolio">+</a>
-  			  </div>		
-			</div>
-                    </div>
-                    </div>
-                </div>
+    <!-- Contact Start -->
+    <section id="contact" class="footer">
+        <div class="container text-center">
+            <h2>Nemil Doshi</h2>
+            <p>Nanavati Circle, 150ft Ring Road, Rajkot, Gujarat, India</p>
+            <p><a href="tel:+917383906618">+91 7383906618</a> | <a href="mailto:nemildoshi1997@gmail.com">nemildoshi1997@gmail.com</a></p>
+            <div class="footer-social">
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/nemil_26/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
+            <p class="mt-3">&copy; Nemil Doshi. All Rights Reserved.</p>
         </div>
-    </div>
-    <!-- Portfolio End -->
+    </section>
+    <!-- Contact End -->
 
-
-    
-
-    
-
-
-<!-- Me Start -->
-<div class="services" id="Services">
-    <div class="my-services">
-        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <h2>MY SERVICES</h2>
-        </div>
-        <div class="row wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Column 1 -->
-            <div class="col-md-6">
-                <div class="me-text">
-                    <h4>> WEDDING RELATED CARDS</h4>
-                    <p>* Wedding & Engagement Invitations</p>
-                    <p>* Reception / Sangeet / Mehndi Invites</p>
-                    <p>* Thank You Cards</p>
-                    <p>* Digital Wedding Invitations (WhatsApp / Instagram)</p>
-
-                    <h4>> BABY & KIDS EVENTS</h4>
-                    <p>* Baby Shower Invitations</p>
-                    <p>* Naming Ceremony (Namkaran) Cards</p>
-                    <p>* First Birthday Invitations</p>
-                </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="col-md-6">
-                <div class="me-text">
-                    <h4>> BUSINESS & CORPORATE CARDS</h4>
-                    <p>* Business / Visiting Cards</p>
-                    <p>* Thank You Cards for Clients</p>
-                    <p>* Appointment / Loyalty Cards</p>
-
-                    <h4>> EVENT & FESTIVAL INVITATIONS</h4>
-                    <p>* Housewarming (Griha Pravesh) Cards</p>
-                    <p>* Birthday / Anniversary Invitations</p>
-                    <p>* Festival Greetings (Diwali, Eid, New Year, etc.)</p>
-
-                    <h4>> DIGITAL DESIGNS</h4>
-                    <p>* E-Invites for WhatsApp / Email</p>
-                    <p>* Social Media Post Designs</p>
-                    <p>* Custom Photo Cards</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Me End -->
-
-
-<!-- Footer Start -->
-<div class="Contact" id="Contact">
-<div class="footer wow fadeIn" data-wow-delay="0.3s">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="footer-info text-center">
-                <h2>Nemil Doshi</h2>
-                <h3>Nanavati Circle, 150ft Ring Road, Rajkot, 360007 Gujarat, India</h3>
-
-                <div class="footer-menu">
-                    <p><a href="tel:+917383906618"> +91-7383906618</a></p>
-                    <p><a href="mailto:nemildoshi1997@gmail.com"> nemildoshi1997@gmail.com</a></p>
-                </div>
-
-                <div class="footer-social">
-                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/nemil_26/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container copyright text-center">
-            <p>&copy; <a href="#">Nemil</a>, All Rights Reserved | Designed By <a href="#">Nemil Doshi</a></p>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
-
-
-    <!-- Back to top button -->
-    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-
-    <!-- Pre Loader -->
-    <div id="loader" class="show">
-        <div class="loader"></div>
-    </div>
-
-
-    <!-- JavaScript Libraries -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
-</html>  
+</html>
